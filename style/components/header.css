@@ -43,14 +43,6 @@ header ul,
    transform: rotate(135deg);
 }
 
-/* li{
-   display: flex;
-   gap: 10px;
-} */
-
-/* li a img{
-   margin-left: 10px;
-} */
 .header-contact {
    gap: 40px;
 }
