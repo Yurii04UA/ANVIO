@@ -7,61 +7,105 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+   <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> -->
    <link rel="stylesheet" href="style/style.css">
+   <link href="//db.onlinewebfonts.com/c/a575313c6dc4fd00c1a9506e1c3ea4fc?family=Euclid+Circular+A" rel="stylesheet"
+      type="text/css" />
    <title>ANVIO</title>
 </head>
 
 <body>
 
-   <div class="container">
-      <header>
-         <div class="header-logo">
-            <img src="img/logo.svg" alt="Logo" class="header-logo-item">
+   <header>
+      <div class="header-logo">
+         <a href="index.html">
+            <img src="img/logo.svg" alt="Logo" class="header-logo-item" />
+         </a>
+      </div>
+      <nav class="header-nav">
+         <ul>
+            <li class="headr-nav_list-item">
+               <a href="#" class="headr-nav_list-item_link">
+                  развлечения
+               </a>
+            </li>
+            <li class="headr-nav_list-item">
+               <a href="#" class="headr-nav_list-item_link">
+                  эмоции
+               </a>
+            </li>
+            <li class="headr-nav_list-item">
+               <a href="#" class="headr-nav_list-item_link">
+                  мероприятия
+               </a>
+
+            </li>
+            <li class="headr-nav_list-item">
+               <a href="#">
+                  отзывы
+               </a>
+            </li>
+         </ul>
+      </nav>
+      <button class="header-btn">
+         купить билет
+      </button>
+      <div class="header-contact">
+         <div>+38 (067) 296-30-30</div>
+         <ul>
+            <li class="header-contact_list-item">
+               <a href="#" class="headr-nav_list-item_link">
+                  киев
+               </a>
+            </li>
+            <li class="header-contact_list-item">
+               <a href="#">войти</a>
+            </li>
+            <li class="header-contact_list-item">
+               <a href="#" class="headr-nav_list-item_link">
+                  ua
+               </a>
+            </li>
+         </ul>
+      </div>
+   </header>
+   <main>
+      <section class="first-section">
+         <img src="img/red-circle.svg" alt="background" class="first-section-background">
+         <div class="first-section_left">
+            <h1>VR-клуб «Anvio»</h1>
+            <p>парк цифровых развлечений для всей семьи</p>
+            <div class="first-section_left-info">
+               <div>
+                  <img src="img/icons/square.svg" alt="Square" />
+                  <div class="first-section_left-info-text">Площадь парка 2100 м²</div>
+               </div>
+               <div>
+                  <img src="./img/icons/team-game.svg" alt="Team game" />
+                  <div class="first-section_left-info-text">Командные игры</div>
+               </div>
+               <div>
+                  <img src="img/icons/moving.svg" alt="Free moving" />
+                  <div class="first-section_left-info-text">Свобода передвижений</div>
+               </div>
+            </div>
+            <div class="first-section_left-slider">
+               <div class="slider-info">
+                  <p>скидка 50%</p>
+                  <p>на второй сеанс</p>
+                  <button class="slider-btn">Получить скидку</button>
+               </div>
+            </div>
          </div>
-         <nav class="header-nav">
-            <ul>
-               <li class="headr-nav_list-item">
-                  <a href="#">
-                     развлечения
-                  </a>
-               </li>
-               <li class="headr-nav_list-item">
-                  <a href="#">
-                     эмоции
-                  </a>
-               </li>
-               <li class="headr-nav_list-item">
-                  <a href="#">
-                     мероприятия
-                  </a>
-               </li>
-               <li class="headr-nav_list-item">
-                  <a href="#">
-                     отзывы
-                  </a>
-               </li>
-            </ul>
-         </nav>
-         <button class="header-btn">
-            купить билет
-         </button>
-         <div class="header-contact">
-            <div>+38 (067) 296-30-30</div>
-            <ul>
-               <li class="header-contact_list-item">
-                  <a href="#">киев</a>
-               </li>
-               <li class="header-contact_list-item">
-                  <a href="#">войти</a>
-               </li>
-               <li class="header-contact_list-item">
-                  <a href="#">ua</a>
-               </li>
-            </ul>
+         <div class="first-section_right">
+            <div>
+               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                  <img src="img/video-first-section.png" alt="video" />
+               </a>
+            </div>
          </div>
-      </header>
-   </div>
+      </section>
+   </main>
 
 </body>
 
