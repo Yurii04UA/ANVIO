@@ -25,6 +25,7 @@ h1 {
    max-width: 884px;
    color: #fff;
    margin-left: 150px;
+   margin-right: -50px;
 }
 
 .first-section_left>p {
@@ -63,6 +64,11 @@ h1 {
    margin-left: 15px;
 }
 
+.first-section_right div {
+   width: 858px;
+   height: 858px;
+}
+
 .first-section_right div img {
    width: 858px;
    height: 858px;
@@ -73,7 +79,7 @@ h1 {
 /* // slider */
 .first-section_left-slider {
    margin-top: 70px;
-   
+
 }
 
 .slider-info {
@@ -86,7 +92,7 @@ h1 {
    background-image: url('../../img/slider/discount.png');
    background-position: right bottom;
    background-repeat: no-repeat;
-   
+
 }
 
 .slider-info p:first-child {
@@ -109,36 +115,39 @@ h1 {
    margin-top: 20px;
 }
 
-.slider-dots{
+.slider-dots {
    display: flex;
    gap: 10px;
    width: 500px;
    justify-content: center;
    margin-top: 20px;
 }
-.dot{
+
+.dot {
    width: 12px;
    height: 12px;
    background-color: #fff;
    opacity: 0.5;
    border-radius: 50%;
 }
-.active-dot{
+
+.active-dot {
    opacity: 1;
 }
 
-.slider-arrow-prev{
+.slider-arrow-prev {
    position: absolute;
    left: 0;
    top: 50%;
-   transform: translate(-50%,-50%);
+   transform: translate(-50%, -50%);
    height: 60px;
    width: 60px;
    border-radius: 50%;
    background: #fff;
    cursor: pointer;
 }
-.slider-arrow-prev::after{
+
+.slider-arrow-prev::after {
    content: '';
    width: 15px;
    height: 15px;
@@ -148,13 +157,14 @@ h1 {
    top: 40%;
    left: 40%;
    transform: rotate(225deg);
-   
+
 }
-.slider-arrow-next{
+
+.slider-arrow-next {
    position: absolute;
    right: 0;
    top: 50%;
-   transform: translate(50%,-50%);
+   transform: translate(50%, -50%);
    height: 60px;
    width: 60px;
    border-radius: 50%;
@@ -162,7 +172,7 @@ h1 {
    cursor: pointer;
 }
 
-.slider-arrow-next::after{
+.slider-arrow-next::after {
    content: '';
    width: 15px;
    height: 15px;
@@ -172,5 +182,39 @@ h1 {
    top: 40%;
    right: 40%;
    transform: rotate(405deg);
-   
+
+}
+
+/* // circle  */
+.first-section-circle {
+   width: 450px;
+   height: 450px;
+   background: #ffffffe6;
+   backdrop-filter: blur(10px);
+   border-radius: 50%;
+   position: absolute;
+   top: 550px;
+   left: 50%;
+   transform: translate(-50%);
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+  padding: 35px;
+}
+
+.cosmo-logo{
+   width: 201px;
+}
+.circle-geo{
+   width: 53px;
+}
+.first-section-circle-info{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.first-section-circle-info img{
+   width: 29px;
 }
