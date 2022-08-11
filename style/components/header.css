@@ -251,6 +251,7 @@ header li:hover {
 .header-mobile{
    display: flex;
    align-items: center;
+   display: none;
 }
 .header-mobile div{
    width: 50px;
@@ -267,6 +268,7 @@ header li:hover {
 }
 .header-logo-mobile{
    height: 30px;
+   display: none;
 }
 
 .mobile-menu-active{
@@ -352,4 +354,9 @@ header li:hover {
    .header-logo {
       display: none;
    }
+
+   .header-mobile,
+.header-logo-mobile{
+   display: flex;
+}
 }

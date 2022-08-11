@@ -9,6 +9,7 @@ body {
 }
 body{
   background:#eee ;
+  overflow-x: hidden;
 }
 
 * {
