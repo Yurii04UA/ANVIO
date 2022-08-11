@@ -248,7 +248,36 @@ header li:hover {
 
 /* // mobile header */
 
-.mobile-menu-modal{
+.header-mobile{
+   display: flex;
+   align-items: center;
+}
+.header-mobile div{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.header-logo-mobile img{
+   width: 121px;
+   height: 30px;
+}
+.header-logo-mobile{
+   height: 30px;
+}
+
+.mobile-menu-active{
+   background-color: rgba(128, 128, 128, 0.5);
+}
+
+
+
+
+/* // modal windov */
+/* .mobile-menu-modal{
    transform: translate(100%);
    opacity: 0;
    transition: all 0.3s ease;
@@ -256,11 +285,47 @@ header li:hover {
    height: 100vh;
    position: absolute;
    left: 0;
-   top: 70px;
+   top: 50px;
    z-index: 2;
    background-color: rgba(0, 0, 0, 0.5);
    overflow: auto;
+} */
+.mobile-menu-modal-1,.mobile-menu-modal-2,.mobile-menu-modal-3{
+   transform: translate(100%);
+   opacity: 0;
+   transition: all 0.3s ease;
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   left: 0;
+   top: 50px;
+   z-index: 2;
+   background-color: rgba(0, 0, 0, 0.5);
+   overflow: auto;
+
+   display: flex;
+   justify-content: end;
+   padding-right: 50px;
+   padding-top: 20px;
 }
+
+
+.mobile-menu-modal-3 div{
+   height: 500px;
+   width: 300px;
+   background-color: #fff;
+}
+.mobile-menu-modal-2 div{
+   height: 500px;
+   width: 300px;
+   background-color: #fff;
+}
+.mobile-menu-modal-1 div{
+   height: 500px;
+   width: 300px;
+   background-color: #fff;
+}
+
 
 .show-modal{
    transform: translate(0%);
@@ -277,10 +342,14 @@ header li:hover {
 /* // media queries */
 
 @media (max-width: 1880px) {
+   header{
+      padding: 0px 30px;
+   }
 
    .header-contact,
    .header-nav,
-   .header-btn {
+   .header-btn,
+   .header-logo {
       display: none;
    }
 }
