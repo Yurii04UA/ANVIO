@@ -369,7 +369,12 @@ header li:hover {
    border-radius: 30px;
    border: 2px solid #CE2127;
    background: #fff;
+}
 
+.btn-red{
+   background: #CE2127;
+   color: #fff;
+   margin-bottom: 10px;
 }
 
 .mobile-menu-modal-geo div {
@@ -420,7 +425,9 @@ header li:hover {
 .modal-burger-location .city {
    padding-top: 20px;
 }
-
+.modal-burger-location{
+   margin-top: 20px;
+}
 
 
 details summary::-webkit-details-marker {
@@ -441,13 +448,20 @@ details summary::after {
    top: -8px;
    left: 5px;
 }
-
+details{
+   text-align: center;
+}
+details > div{
+   margin-top: 20px;
+}
 /* // added marker */
 
 details[open] summary {
    color: #CE2127;
 
 }
+
+
 
 .details-language[open] .mobile-menu-modal-burger_language {
    text-align: end;
@@ -463,6 +477,10 @@ details[open] summary {
    width: 100%;
 }
 
+.details-city summary{
+   text-align: left;
+}
+
 .mobile-menu-modal-burger_header {
    display: flex;
    justify-content: space-between;
@@ -471,8 +489,78 @@ details[open] summary {
 .mobile-menu-modal-burger_language {
    padding-right: 0px;
 }
+.burger_language-wrapper{
+   display: flex;
+   justify-content: space-between;
+   
+   padding-right: 10px;
+   margin-top: 20px;
+}
+.burger_language-wrapper a:not(:last-child){
+   margin-right: 20px;
+}
+.burger_language-wrapper a:hover{
+   color: #CE2127;
+}
+.buttons-group-burger{
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
 
-.details-city {}
+.details-party ul{
+   flex-direction: column;
+}
+.details-party ul li{
+   display: flex;
+   width: 250px;
+ 
+}
+.details-party ul a{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.details-party ul a p{
+  max-width: 200px;
+  text-align: start;
+}
+
+.details-entertainment{
+   padding: 20px 0; 
+   border-top: 2px solid #EEEEEE;
+   border-bottom: 2px solid #EEEEEE;
+}
+.details-party{
+   padding: 20px 0; 
+   border-bottom: 2px solid #EEEEEE;
+}
+
+.mobile-menu-modal-burger-link{
+   display: block;
+   text-align: center;
+   padding: 26px 0; 
+   border-bottom: 2px solid #EEEEEE;
+}
+.mobile-menu-modal-burger-link:hover{
+   color: #CE2127;
+}
+
+.contacts_social_burger{
+   padding: 20px 0;
+   border-bottom: 2px solid #EEEEEE;
+}
+
+.modal-burger-login{
+   text-transform: uppercase;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   justify-content: center;
+   margin-top: 20px;
+   margin-bottom: 30px;
+
+}
 
 /* // contacts */
 .mobile-menu-modal_contacts {
