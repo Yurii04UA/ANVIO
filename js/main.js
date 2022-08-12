@@ -50,3 +50,19 @@ menuButtons.forEach((elem) => {
 //   menu.style.display = "flex";
 //   modalWindow.classList.toggle("show-modal");
 // });
+
+function onToggle(event) {
+  if (event.target.open) {
+    document.querySelectorAll("details[open]").forEach((el) => {
+      if (el === event.target) {
+        return;
+      }
+
+      el.open = false;
+    });
+  }
+}
+
+document
+  .querySelectorAll("details")
+  .forEach((el) => el.addEventListener("toggle", onToggle));
