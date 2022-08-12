@@ -1,9 +1,3 @@
-const menu = document.querySelector(".header-mobile_menu");
-const cross = document.querySelector(".header-mobile_cross");
-const modalWindow1 = document.querySelector(".mobile-menu-modal-geo");
-const modalWindow2 = document.querySelector(".mobile-menu-modal-contact");
-const modalWindow3 = document.querySelector(".mobile-menu-modal-burger");
-
 const body = document.body;
 const arrayModals = [
   ,
@@ -12,6 +6,12 @@ const arrayModals = [
   document.querySelector(".mobile-menu-modal-burger"),
 ];
 const menuButtons = document.querySelectorAll(".menu-button");
+
+const showContentLocation = document.querySelector(".datails-content-location");
+const showContentLanguage = document.querySelector(".datails-content-language");
+const showContryOrLang = document.querySelectorAll(".datails-content");
+const btnCity = document.querySelector(".details-city");
+const btnLang = document.querySelector(".details-language");
 
 menuButtons.forEach((elem) => {
   elem.addEventListener("click", () => {
@@ -40,16 +40,23 @@ menuButtons.forEach((elem) => {
   });
 });
 
-// menu.addEventListener("click", () => {
-//   cross.style.display = "flex";
-//   menu.style.display = "none";
-//   modalWindow.classList.toggle("show-modal");
-// });
-// cross.addEventListener("click", () => {
-//   cross.style.display = "none";
-//   menu.style.display = "flex";
-//   modalWindow.classList.toggle("show-modal");
-// });
+btnCity.addEventListener("click", () => {
+  document.querySelectorAll("details[open]").forEach((el) => {
+    el.open = false;
+  });
+  showContentLanguage.classList.remove("show-content");
+  showContentLocation.classList.toggle("show-content");
+});
+btnLang.addEventListener("click", () => {
+  document.querySelectorAll("details[open]").forEach((el) => {
+    el.open = false;
+  });
+  showContentLocation.classList.remove("show-content");
+  showContentLanguage.classList.toggle("show-content");
+ 
+});
+
+
 
 function onToggle(event) {
   if (event.target.open) {
@@ -61,8 +68,12 @@ function onToggle(event) {
       el.open = false;
     });
   }
+  showContryOrLang.forEach(e => e.classList.remove("show-content"))
+//   showContentLocation.classList.remove("show-content");
+//   showContentLanguage.classList.remove("show-content");
 }
-
 document
   .querySelectorAll("details")
-  .forEach((el) => el.addEventListener("toggle", onToggle));
+  .forEach((el) =>{
+    el.addEventListener("toggle", onToggle)
+  });
