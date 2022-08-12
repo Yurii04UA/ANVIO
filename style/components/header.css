@@ -57,6 +57,7 @@ header ul,
    color: #CE2127;
 }
 
+/* // show dropdoun */
 .header-nav_list-item:hover .dropdown-fun {
    opacity: 1;
    visibility: visible;
@@ -196,11 +197,12 @@ header li:hover {
 
 }
 
-.dropdown-active {
+.active-gray {
    opacity: 0.3;
+   text-transform: uppercase;
 }
 
-.dropdown-active:hover {
+.active-gray:hover {
    color: #000;
 }
 
@@ -248,12 +250,13 @@ header li:hover {
 
 /* // mobile header */
 
-.header-mobile{
+.header-mobile {
    display: flex;
    align-items: center;
    display: none;
 }
-.header-mobile div{
+
+.header-mobile div {
    width: 50px;
    height: 50px;
    border-radius: 50%;
@@ -262,17 +265,18 @@ header li:hover {
    justify-content: center;
 }
 
-.header-logo-mobile img{
+.header-logo-mobile img {
    width: 121px;
    height: 30px;
 }
-.header-logo-mobile{
+
+.header-logo-mobile {
    height: 30px;
    display: none;
 }
 
-.mobile-menu-active{
-   background-color: rgba(128, 128, 128, 0.5);
+.mobile-menu-active {
+   background-color: rgba(128, 128, 128, 0.2);
 }
 
 
@@ -292,7 +296,9 @@ header li:hover {
    background-color: rgba(0, 0, 0, 0.5);
    overflow: auto;
 } */
-.mobile-menu-modal-1,.mobile-menu-modal-2,.mobile-menu-modal-3{
+.mobile-menu-modal-geo,
+.mobile-menu-modal-contact,
+.mobile-menu-modal-burger {
    transform: translate(100%);
    opacity: 0;
    transition: all 0.3s ease;
@@ -307,29 +313,79 @@ header li:hover {
 
    display: flex;
    justify-content: end;
-   padding-right: 50px;
-   padding-top: 20px;
+   padding-right: 10px;
+   padding-top: 10px;
+
 }
 
-
-.mobile-menu-modal-3 div{
-   height: 500px;
-   width: 300px;
+.mobile-menu-modal-geo>div,
+.mobile-menu-modal-burger>div,
+.mobile-menu-modal-contact>div {
+   padding: 30px 0;
+   max-width: 400px;
+   width: 100%;
+   height: fit-content;
    background-color: #fff;
+   border-radius: 20px;
+   
 }
-.mobile-menu-modal-2 div{
-   height: 500px;
-   width: 300px;
-   background-color: #fff;
+
+.modal-geo_info{
+   padding: 0 30px;
 }
-.mobile-menu-modal-1 div{
-   height: 500px;
-   width: 300px;
-   background-color: #fff;
+.modal-geo_info p{
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+.modal-geo_info .first-section-circle-info{
+   justify-content: center;
+}
+.modal-geo_info .active-gray{
+   margin-top: 20px;
+}
+.time-marker{
+   margin-top: 10px;
+}
+.modal-geo_buttons{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   margin-bottom: 30px;
+}
+
+.modal_btn{
+   width: 222px;
+   text-transform: uppercase;
+   font-weight: 700;
+   padding: 10px 0;
+   border-radius: 30px;
+   border: 2px solid #CE2127;
+   background: #fff;
+  
+}
+.mobile-menu-modal-geo div {
+   text-align: center;
+}
+
+.mobile-menu-modal-burger div {}
+
+.mobile-menu-modal_contacts{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   font-size: 20px;
+   color: #CE2127;
+}
+.contacts_social a:not(:last-child){
+   margin-right: 18px;
 }
 
 
-.show-modal{
+
+
+.show-modal {
    transform: translate(0%);
    opacity: 1;
 }
@@ -344,7 +400,7 @@ header li:hover {
 /* // media queries */
 
 @media (max-width: 1880px) {
-   header{
+   header {
       padding: 0px 30px;
    }
 
@@ -356,7 +412,7 @@ header li:hover {
    }
 
    .header-mobile,
-.header-logo-mobile{
-   display: flex;
-}
+   .header-logo-mobile {
+      display: flex;
+   }
 }

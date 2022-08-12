@@ -1,15 +1,15 @@
 const menu = document.querySelector(".header-mobile_menu");
 const cross = document.querySelector(".header-mobile_cross");
-const modalWindow1 = document.querySelector(".mobile-menu-modal-1");
-const modalWindow2 = document.querySelector(".mobile-menu-modal-2");
-const modalWindow3 = document.querySelector(".mobile-menu-modal-3");
+const modalWindow1 = document.querySelector(".mobile-menu-modal-geo");
+const modalWindow2 = document.querySelector(".mobile-menu-modal-contact");
+const modalWindow3 = document.querySelector(".mobile-menu-modal-burger");
 
 const body = document.body;
 const arrayModals = [
   ,
-  document.querySelector(".mobile-menu-modal-1"),
-  document.querySelector(".mobile-menu-modal-2"),
-  document.querySelector(".mobile-menu-modal-3"),
+  document.querySelector(".mobile-menu-modal-geo"),
+  document.querySelector(".mobile-menu-modal-contact"),
+  document.querySelector(".mobile-menu-modal-burger"),
 ];
 const menuButtons = document.querySelectorAll(".menu-button");
 

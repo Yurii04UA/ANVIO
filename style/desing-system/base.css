@@ -6,10 +6,13 @@ body {
   box-sizing: border-box;
   font-family: 'Euclid Circular A Fonts', sans-serif;
   height: 100%;
-}
-body{
-  background:#eee ;
   overflow-x: hidden;
+
+}body{
+  height: 100%;
+  width: 100%;
+  background:#eee ;
+  
 }
 
 * {
