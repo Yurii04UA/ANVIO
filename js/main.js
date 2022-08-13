@@ -79,3 +79,15 @@ function onToggle(event) {
 document.querySelectorAll("details").forEach((el) => {
   el.addEventListener("toggle", onToggle);
 });
+
+
+
+/// slider
+
+$(".slider").slick({
+  dots:true,
+  // slidesToShow:0,
+  initialSlide:1,
+  // centerMode:true,
+  // variableWidth:true
+ });
