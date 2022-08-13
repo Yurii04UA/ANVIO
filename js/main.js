@@ -41,22 +41,26 @@ menuButtons.forEach((elem) => {
 });
 
 btnCity.addEventListener("click", () => {
-  document.querySelectorAll("details[open]").forEach((el) => {
-    el.open = false;
-  });
+  closeAllDetails();
   showContentLanguage.classList.remove("show-content");
   showContentLocation.classList.toggle("show-content");
 });
 btnLang.addEventListener("click", () => {
+  closeAllDetails();
+  showContentLocation.classList.remove("show-content");
+  showContentLanguage.classList.toggle("show-content");
+});
+
+function changeWindow(element) {
+  closeAllDetails();
+  
+}
+
+function closeAllDetails() {
   document.querySelectorAll("details[open]").forEach((el) => {
     el.open = false;
   });
-  showContentLocation.classList.remove("show-content");
-  showContentLanguage.classList.toggle("show-content");
- 
-});
-
-
+}
 
 function onToggle(event) {
   if (event.target.open) {
@@ -64,16 +68,14 @@ function onToggle(event) {
       if (el === event.target) {
         return;
       }
-
       el.open = false;
     });
   }
-  showContryOrLang.forEach(e => e.classList.remove("show-content"))
-//   showContentLocation.classList.remove("show-content");
-//   showContentLanguage.classList.remove("show-content");
+
+  if (document.querySelectorAll("details[open]").length > 0) {
+    showContryOrLang.forEach((e) => e.classList.remove("show-content"));
+  }
 }
-document
-  .querySelectorAll("details")
-  .forEach((el) =>{
-    el.addEventListener("toggle", onToggle)
-  });
+document.querySelectorAll("details").forEach((el) => {
+  el.addEventListener("toggle", onToggle);
+});
