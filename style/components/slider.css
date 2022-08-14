@@ -133,3 +133,32 @@
    border: none;
 
 }
+
+
+
+.slide1{
+   background-image: url('../../img/slider/discount.png');
+}
+.slide2{
+   background-image: url('../../img/slider/birthday.png');
+}
+.slide3{
+   background-image: url('../../img/slider/party.png');
+}
+
+
+@media (max-width: 625px) {
+   .slide1{
+      background-image: url('../../img/slider/discount.png');
+      background-size: 50%;
+   }
+   .slide2{
+      background-image: url('../../img/slider/birthday.png');
+      background-size: 50%;
+   }
+   .slide3{
+      background-image: url('../../img/slider/party.png');
+      background-size: 50%;
+   }
+   
+}
