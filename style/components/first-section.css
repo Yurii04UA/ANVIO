@@ -104,7 +104,6 @@ main {
 /* // slider */
 .first-section_left-slider {
    margin-top: 70px;
-   margin-left: 30px;
    width: 500px;
 }
 
@@ -243,6 +242,7 @@ main {
       flex-direction: column;
       align-items: center;
       text-align: center;
+
    }
 
    .first-section-back {
@@ -255,7 +255,6 @@ main {
 
    .first-section_left {
       margin-right: 0;
-      padding-bottom: 60px;
    }
 
    .first-section_left>p {
@@ -271,8 +270,8 @@ main {
    }
 
    .first-section_right {
-      position: absolute;
-      bottom: -770px;
+      /* position: absolute;
+      bottom: -770px; */
    }
    main {
       padding: 0;
@@ -281,7 +280,7 @@ main {
 
 @media (max-width: 1000px) {
    .first-section {
-      padding: 70px 20px 20px 20px;
+      padding: 70px 20px 0px 20px;
    }
 
    .first-section_left h1 {
