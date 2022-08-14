@@ -1,0 +1,43 @@
+.fourth-section{
+
+}
+.fourth-section-header-title{
+   font-size: 64px;
+   font-weight: 600;
+   margin-bottom: 50px;
+}
+
+.btn-fourth-section{
+   width: 450px;
+   padding: 20px 30px;
+   border-radius: 20px;
+   border: 5px solid #FFFFFF;
+   text-transform: uppercase;
+   color: #CE2127;
+   font-weight: 600;
+   letter-spacing: 2px;
+}
+
+.btn-fourth-section-active{
+   background: #FFFFFF;
+   color: #000;
+   position: relative;
+}
+.btn-fourth-section-active::after {
+   border: medium solid transparent;
+   content: "";
+   top: 100%;
+   left: 50%;
+   position: absolute;
+   height: 0;
+   width: 0;
+   border-color: #ffffff rgba(255, 212, 52, 0) rgba(255, 212, 52, 0);
+   border-width: 25px;
+   margin-left: -25px;
+ }
+
+ .fourth-section_content{
+   margin-top: 30px;
+   background-color: #FFF;
+   border-radius: 20px;
+ }
