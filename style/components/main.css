@@ -255,6 +255,7 @@ main {
 
    .first-section_left {
       margin-right: 0;
+      padding-bottom: 60px;
    }
 
    .first-section_left>p {
@@ -271,7 +272,10 @@ main {
 
    .first-section_right {
       position: absolute;
-      bottom: -800px;
+      bottom: -770px;
+   }
+   main {
+      padding: 0;
    }
 }
 
@@ -293,7 +297,7 @@ main {
    }
 
    .first-section_right {
-      bottom: -600px;
+      bottom: -550px;
    }
 
    .first-section_left h1 {
@@ -323,15 +327,11 @@ main {
    }
 }
 
-@media (max-width: 600px) {
-   .first-section_right {
-      bottom: -580px;
-   }
-}
+
 
 @media (max-width: 625px) {
    .first-section_right {
-      bottom: -550px;
+      bottom: -500px;
    }
 
    .first-section_left-slider {
@@ -345,7 +345,80 @@ main {
    .slider-btn {
       padding: 10px 20px;
    }
-   .slider-info{
+
+   .slider-info {
       height: auto;
    }
+}
+@media (max-width: 570px){
+   .first-section_right {
+      bottom: -470px;
+   }
+}
+
+@media (max-width: 530px) {
+   .first-section_left_header p {
+      font-size: 16px;
+   }
+
+   .first-section {
+      padding-top: 30px;
+   }
+
+   .first-section_left h1 {
+      font-size: 32px;
+      margin-top: 20px;
+   }
+
+   .first-section_left>p {
+      font-size: 16px;
+   }
+
+   .first-section_left-info-text {
+      font-size: 14px;
+   }
+   .first-section_left-info img {
+      height: 40px;
+      width: 40px;
+  }
+  .first-section_left_mobile-img{
+   width: 150px;
+  }
+  .first-section_left-wrapper{
+   padding-top: 40px;
+  }
+  .first-section_right {
+   bottom: -390px;
+}
+}
+
+@media (max-width: 450px) {
+   .first-section_left-wrapper{
+      gap: 0;
+   }
+   .first-section_left-slider {
+      width: 300px;
+   }
+   .first-section_right {
+      bottom: -300px;
+   }
+}
+
+@media (max-width: 420px) {
+   .first-section_left-wrapper{
+      gap: 0;
+   }
+   .first-section_right {
+      bottom: -300px;
+  }
+}
+@media (max-width: 380px) {
+   .first-section_right {
+      bottom: -300px;
+  }
+}
+@media (max-width: 360px) {
+   .first-section_right {
+      bottom: -260px;
+  }
 }

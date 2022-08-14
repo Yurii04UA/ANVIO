@@ -50,7 +50,7 @@
 /* Стрелка */
 .slick-arrow {
    position: absolute;
-   z-index: 10;
+   z-index: 9;
    font-size: 0;
    border: #fff;
 }
