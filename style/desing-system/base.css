@@ -52,3 +52,18 @@ a {
 .OH{
   overflow: hidden;
 }
+
+.btn{
+ padding: 20px 40px; 
+ border-radius: 20px;
+ border: 1px solid #CE2127;
+ background: none;
+ text-transform: uppercase;
+ font-weight: 600;
+ letter-spacing: 1px;
+}
+.btn-red{
+  background: #CE2127;
+  color: #fff;
+  margin-right: 20px;
+}
