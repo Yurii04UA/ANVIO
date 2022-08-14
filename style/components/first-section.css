@@ -246,7 +246,7 @@ main {
    }
 
    .first-section-back {
-      background-image: url('../../img/red-circle.png');
+      background-image: url('../../img/first-section/red-circle.png');
    }
 
    .first-section-background {
@@ -269,10 +269,6 @@ main {
       justify-content: space-between;
    }
 
-   .first-section_right {
-      /* position: absolute;
-      bottom: -770px; */
-   }
    main {
       padding: 0;
    }
