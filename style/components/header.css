@@ -133,7 +133,12 @@ header li:hover {
    border: none;
    text-transform: uppercase;
    letter-spacing: 0.5px;
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
 
+.header-btn:hover{
+  opacity: 0.9;
 }
 
 /* // dropdown  */

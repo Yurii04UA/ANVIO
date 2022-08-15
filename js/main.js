@@ -13,6 +13,17 @@ const showContryOrLang = document.querySelectorAll(".datails-content");
 const btnCity = document.querySelector(".details-city");
 const btnLang = document.querySelector(".details-language");
 
+//modal fourth section
+const btnPrice = document.querySelector(".btn-price");
+const btnClose= document.querySelector('.btn-close')
+const modalWindowPrice = document.querySelector(".fourth-section_modal");
+btnPrice.addEventListener("click", () => {
+  modalWindowPrice.classList.add("fourth-sectio-show-modal");
+});
+btnClose.addEventListener('click',() => {
+  modalWindowPrice.classList.remove("fourth-sectio-show-modal");
+})
+// active circle of mobile menu
 menuButtons.forEach((elem) => {
   elem.addEventListener("click", () => {
     // add/delete active circle
@@ -40,6 +51,7 @@ menuButtons.forEach((elem) => {
   });
 });
 
+// show city and lang menu
 btnCity.addEventListener("click", () => {
   closeAllDetails();
   showContentLanguage.classList.remove("show-content");
@@ -53,7 +65,6 @@ btnLang.addEventListener("click", () => {
 
 function changeWindow(element) {
   closeAllDetails();
-  
 }
 
 function closeAllDetails() {
@@ -62,6 +73,7 @@ function closeAllDetails() {
   });
 }
 
+// close all windows when open other menu
 function onToggle(event) {
   if (event.target.open) {
     document.querySelectorAll("details[open]").forEach((el) => {
@@ -80,14 +92,12 @@ document.querySelectorAll("details").forEach((el) => {
   el.addEventListener("toggle", onToggle);
 });
 
-
-
 /// slider
 
 $(".slider").slick({
-  dots:true,
+  dots: true,
   // slidesToShow:0,
-  initialSlide:1,
+  initialSlide: 1,
   // centerMode:true,
   // variableWidth:true
- });
+});
