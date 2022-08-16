@@ -17,19 +17,18 @@
 
    <header>
       <div class="header-logo">
-         <!-- <a href="./index.html"> -->
-         <a href="#fifth-section">
+         <a href="./index.html">
             <img src="./img/first-section/logo.svg" alt="Logo" class="header-logo-item" />
          </a>
       </div>
       <nav class="header-nav">
          <ul>
             <li class="header-nav_list-item">
-               <a href="#" class="header-nav_list-item_link">
+               <div href="#" class="header-nav_list-item_link">
                   развлечения
-               </a>
+               </div>
                <div class="dropdown-fun">
-                  <a href="#">
+                  <a href="#arena">
                      <img src="./img/dpordown/arena.png" alt="Arena" />
                   </a>
                   <a href="#">
@@ -50,41 +49,34 @@
                </div>
             </li>
             <li class="header-nav_list-item">
-               <a href="#">
+               <a href="#emotions">
                   эмоции
                </a>
             </li>
             <li class="header-nav_list-item">
-               <a href="#" class="header-nav_list-item_link">
+               <div href="#" class="header-nav_list-item_link">
                   мероприятия
-               </a>
+               </div>
                <div class="dropdown-events">
-                  <ul>
-                     <li>
-                        <a href="#">
-                           <img src="./img/dpordown/balls.png" alt="Ballons">
-                           <p>детские дни рождения</p>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#">
-                           <img src="./img/dpordown/glasses.png" alt="Glasses">
-                           <p>взрослые дни рождения</p>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#">
-                           <img src="./img/dpordown/party2.png" alt="Party">
-                           <p>копоративы</p>
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#">
-                           <img src="./img/dpordown/star.png" alt="Star">
-                           <p>нестандартные мероприятия</p>
-                        </a>
-                     </li>
-                  </ul>
+                  <a href="#">
+                     <img src="./img/dpordown/balls.png" alt="Ballons">
+                     <p>детские дни рождения</p>
+                  </a>
+
+                  <a href="#">
+                     <img src="./img/dpordown/glasses.png" alt="Glasses">
+                     <p>взрослые дни рождения</p>
+                  </a>
+
+                  <a href="#">
+                     <img src="./img/dpordown/party2.png" alt="Party">
+                     <p>копоративы</p>
+                  </a>
+
+                  <a href="#">
+                     <img src="./img/dpordown/star.png" alt="Star">
+                     <p>нестандартные мероприятия</p>
+                  </a>
                </div>
             </li>
             <li class="header-nav_list-item">
@@ -95,58 +87,36 @@
          </ul>
       </nav>
       <button class="header-btn">
-         купить билет
+         Купить билет
       </button>
       <div class="header-contact">
-         <div>+38 (067) 296-30-30</div>
+         <a href="tel:+380672963030">+38 (067) 296-30-30</a>
          <ul>
             <li class="header-contact_list-item">
                <a href="#" class="header-nav_list-item_link">
-                  киев
+                  Киев
                </a>
                <div class="dropdown-city">
                   <div class="country">
                      <h2>Страна</h2>
-                     <ul>
-                        <li>
-                           <a href="#">кыргызская республика</a>
-                        </li>
-                        <li>
-                           <a href="#">азербайджан</a>
-                        </li>
-                        <li class="active-gray">
-                           <a href="#">украина</a>
-                        </li>
-                        <li>
-                           <a href="#">сша</a>
-                        </li>
-                        <li>
-                           <a href="#">бельгия</a>
-                        </li>
-                        <li>
-                           <a href="#">саудовская аравия</a>
-                        </li>
-                        <li>
-                           <a href="#">франция</a>
-                        </li>
-                        <li>
-                           <a href="#">египет</a>
-                        </li>
-                     </ul>
+                     <div>
+                        <button>кыргызская республика</button>
+                        <button>азербайджан</button>
+                        <button disabled>украина</button>
+                        <button>сша</button>
+                        <button>бельгия</button>
+                        <button>саудовская аравия</button>
+                        <button>франция</button>
+                        <button>египет</button>
+                     </div>
                   </div>
                   <div class="city">
                      <h2>Город</h2>
-                     <ul>
-                        <li class="active-gray">
-                           <a href="#">киев</a>
-                        </li>
-                        <li>
-                           <a href="#">днепр (скоро)</a>
-                        </li>
-                        <li>
-                           <a href="#">львов (скоро)</a>
-                        </li>
-                     </ul>
+                     <div>
+                        <button disabled>киев</button>
+                        <button>днепр (скоро)</button>
+                        <button>львов (скоро)</button>
+                     </div>
                   </div>
                </div>
             </li>
@@ -155,21 +125,20 @@
             </li>
             <li class="header-contact_list-item">
                <a href="#" class="header-nav_list-item_link">
-                  ua
+                  ru
                </a>
                <div class="dropdown-lang">
-                  <ul>
-                     <li>
-                        <a href="#" class="active-gray">
-                           руский
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#">
-                           english
-                        </a>
-                     </li>
-                  </ul>
+                  <div>
+                     <button disabled>
+                        руский
+                     </button>
+                     <button>
+                        english
+                     </button>
+                     <button>
+                        Українська
+                     </button>
+                  </div>
                </div>
             </li>
          </ul>
@@ -496,7 +465,7 @@
          </div>
       </section>
       <!-- //second section -->
-      <section class="second-section">
+      <section class="second-section" id="emotions">
          <div class="second-section_left">
             <div class="second-section_left-title">
                Причины, по которым вы будете в восторге
@@ -582,7 +551,7 @@
             <div class="fourth-section-header-title">
                Наши развлечения
             </div>
-            <div class="fourth-section-header-buttons">
+            <div class="fourth-section-header-buttons" id="arena">
                <button class="btn-fourth-section btn-fourth-section-active">арены</button>
                <button class="btn-fourth-section">атракционы</button>
                <button class="btn-fourth-section">стенды</button>
@@ -827,7 +796,7 @@
                   <div class="fourth-section_modal-wrapper-right_item">
                      <div class="fourth-section_modal-wrapper-right_item-title">
                         <div>Куб</div>
-                        <div class="fourth-section_modal-wrapper-right_item-title-back">500  ₴</div>
+                        <div class="fourth-section_modal-wrapper-right_item-title-back">500 ₴</div>
                      </div>
                      <div class="fourth-section_modal-wrapper-left-content-icon">
                         <div>
@@ -847,7 +816,7 @@
                   <div class="fourth-section_modal-wrapper-right_item">
                      <div class="fourth-section_modal-wrapper-right_item-title">
                         <div>Аттракционы</div>
-                        <div class="fourth-section_modal-wrapper-right_item-title-back">500  ₴</div>
+                        <div class="fourth-section_modal-wrapper-right_item-title-back">500 ₴</div>
                      </div>
                      <div class="fourth-section_modal-wrapper-left-content-icon">
                         <div>
@@ -867,7 +836,7 @@
                   <div class="fourth-section_modal-wrapper-right_item">
                      <div class="fourth-section_modal-wrapper-right_item-title">
                         <div>Стенды</div>
-                        <div class="fourth-section_modal-wrapper-right_item-title-back">500  ₴</div>
+                        <div class="fourth-section_modal-wrapper-right_item-title-back">500 ₴</div>
                      </div>
                      <div class="fourth-section_modal-wrapper-left-content-icon">
                         <div>
@@ -884,23 +853,17 @@
                         </div>
                      </div>
                   </div>
-                  
+
                </div>
-               
+
                <button class=" btn btn-close">X</button>
             </div>
 
          </div>
       </section>
-      <!-- fifth section -->
-      <section class="fifth-section" id="fifth-section">
-         <div class="fifth-section-header">
-            
-         </div>
-      </section>
    </main>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <script src="./js/slick.min.js"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
    <script src="./js/main.js"></script>
 </body>
 
