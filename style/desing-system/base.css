@@ -7,6 +7,8 @@ body {
   font-family: 'Euclid Circular A Fonts', sans-serif;
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
 
 }body{
   height: 100%;
@@ -46,10 +48,8 @@ a {
 .df{
   display: flex;
 }
-.fb{
-  display: block;
-}
-.OH{
+
+.oh{
   overflow: hidden;
 }
 
