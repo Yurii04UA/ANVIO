@@ -101,3 +101,5 @@ $(".slider").slick({
   // centerMode:true,
   // variableWidth:true
 });
+
+
