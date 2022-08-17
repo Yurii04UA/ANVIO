@@ -9,45 +9,19 @@
 .slide3{
    background-image: url('../../img/slider/party.png');
 }
-/* Слайдер */
-.slick-slider {}
 
-/* Слайдер запущен */
-.slick-slider.slick-initialized {}
-
-/* Слайдер с точками */
-.slick-slider.slick-dotted {}
-
-/* Ограничивающая оболочка */
 .slick-list {
    overflow: hidden;
 }
 
-/* Лента слайдов */
 .slick-track {
    display: flex;
 }
-
-/* Слайд */
-.slick-slide {}
-
-/* Слайд активный (показывается) */
-.slick-slide.slick-active {}
-
-/* Слайд основной */
-.slick-slide.slick-current {}
-
-/* Слайд по центру */
-.slick-slide.slick-center {}
-
-/* Клонированный слайд */
-.slick-slide.slick-cloned {}
 
 .slider {
    position: relative;
 }
 
-/* Стрелка */
 .slick-arrow {
    position: absolute;
    z-index: 9;
@@ -55,7 +29,6 @@
    border: #fff;
 }
 
-/* Стрелка влево */
 .slick-arrow.slick-prev {
    left: 0;
    top: 50%;
@@ -73,12 +46,12 @@
    border-top: 2px solid #000;
    border-right: 2px solid #000;
    position: absolute;
-   top: 40%;
-   left: 40%;
-   transform: rotate(225deg);
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%) rotate(225deg);
 }
 
-/* Стрелка вправо */
+
 .slick-arrow.slick-next {
    top: 50%;
    transform: translate(50%, -60%);
@@ -97,15 +70,12 @@
    border-top: 2px solid #000;
    border-right: 2px solid #000;
    position: absolute;
-   top: 40%;
-   right: 40%;
-   transform: rotate(405deg);
+   top: 50%;
+   right: 50%;
+   transform: translate(50%,-50%) rotate(405deg);
 }
 
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {}
 
-/* Точки (булиты) */
 .slick-dots {
    display: flex;
    align-items: center;
@@ -117,12 +87,10 @@
    margin-right: 10px;
 }
 
-/* Активная точка */
 .slick-dots li.slick-active button {
    opacity: 1;
 }
 
-/* Элемент точки */
 .slick-dots li button {
    font-size: 0;
    width: 12px;
@@ -131,19 +99,6 @@
    opacity: 0.5;
    border-radius: 50%;
    border: none;
-
-}
-
-
-
-.slide1{
-   background-image: url('../../img/slider/discount.png');
-}
-.slide2{
-   background-image: url('../../img/slider/birthday.png');
-}
-.slide3{
-   background-image: url('../../img/slider/party.png');
 }
 
 

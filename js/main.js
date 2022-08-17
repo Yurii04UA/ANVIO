@@ -1,10 +1,13 @@
-const body = document.body;
 const arrayModals = [
-  ,
   document.querySelector(".mobile-menu-modal-geo"),
   document.querySelector(".mobile-menu-modal-contact"),
   document.querySelector(".mobile-menu-modal-burger"),
 ];
+const arrayMenu=[
+  document.querySelector(".mobile-menu-modal-geo_wrapper"),
+  document.querySelector(".mobile-menu-modal-contact_wrapper"),
+  document.querySelector(".mobile-menu-modal-burger_wrapper"),
+]
 const menuButtons = document.querySelectorAll(".menu-button");
 
 const showContentLocation = document.querySelector(".datails-content-location");
@@ -23,13 +26,16 @@ btnPrice.addEventListener("click", () => {
 btnClose.addEventListener('click',() => {
   modalWindowPrice.classList.remove("fourth-sectio-show-modal");
 })
+
+
+
 // active circle of mobile menu
 menuButtons.forEach((elem) => {
   elem.addEventListener("click", () => {
     // add/delete active circle
-    menuButtons.forEach((e) => {
-      if (e.id != elem.id) {
-        e.classList.remove("mobile-menu-active");
+    menuButtons.forEach((button) => {
+      if (button.id != elem.id) {
+        button.classList.remove("mobile-menu-active");
       }
     });
     elem.classList.toggle(`mobile-menu-active`);
@@ -40,14 +46,21 @@ menuButtons.forEach((elem) => {
         e.classList.remove(`show-modal`);
       }
     });
+    arrayMenu.forEach((e, i) => {
+      if (i != elem.id) {
+        e.classList.remove(`show-modal`);
+      }
+    });
 
     arrayModals[elem.id].classList.toggle(`show-modal`);
 
-    if (arrayModals[elem.id].classList.value.includes(`show-modal`)) {
-      body.classList.add("oh");
-    } else {
-      body.classList.remove("oh");
+    if(arrayModals[elem.id].classList.value.includes('show-modal')){
+      arrayMenu[elem.id].classList.add(`show-modal`)
+    }else{
+      arrayMenu[elem.id].classList.remove(`show-modal`)
     }
+    
+    
   });
 });
 
@@ -63,9 +76,7 @@ btnLang.addEventListener("click", () => {
   showContentLanguage.classList.toggle("show-content");
 });
 
-function changeWindow(element) {
-  closeAllDetails();
-}
+
 
 function closeAllDetails() {
   document.querySelectorAll("details[open]").forEach((el) => {
@@ -84,7 +95,7 @@ function onToggle(event) {
     });
   }
 
-  if (document.querySelectorAll("details[open]").length > 0) {
+  if (document.querySelectorAll("details[open]").length) {
     showContryOrLang.forEach((e) => e.classList.remove("show-content"));
   }
 }
@@ -96,10 +107,7 @@ document.querySelectorAll("details").forEach((el) => {
 
 $(".slider").slick({
   dots: true,
-  // slidesToShow:0,
   initialSlide: 1,
-  // centerMode:true,
-  // variableWidth:true
 });
 
 
