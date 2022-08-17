@@ -151,22 +151,22 @@
          </a>
       </div>
       <div class="header-mobile">
-         <div class="menu-button" id="1">
+         <div class="menu-button" id="0">
             <img src="./img/icons/mobile/geo.svg" alt="Geolocation" class="header-modile-icon ">
          </div>
-         <div class="menu-button" id="2">
+         <div class="menu-button" id="1">
             <img src="./img/icons/mobile/phone.svg" alt="Phone" class="header-modile-icon">
          </div>
-         <div class="header-mobile_menu menu-button" id="3">
+         <div class="header-mobile_menu menu-button" id="2">
             <img src="./img/icons/mobile/menu.svg" alt="Geolocation" class="header-modile-icon">
          </div>
-         <div class="header-mobile_cross menu-button" id="4" style="display: none;">
+         <div class="header-mobile_cross menu-button" id="3" style="display: none;">
             <img src="./img/icons/mobile/cross.svg" alt="Geolocation" class="header-modile-icon">
          </div>
       </div>
       <!-- // modal menu window -->
       <div class="mobile-menu-modal-geo">
-         <div>
+         <div class="mobile-menu-modal-geo_wrapper">
             <div class="modal-geo_info">
                <p>Киев, ул. Вадима Гетьмана 6 , ТРЦ Cosmo Multimall, Блок A, 2-ой этаж</p>
                <div class="first-section-circle-info">
@@ -182,7 +182,7 @@
             </div>
             <iframe
                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.534836752118!2d30.43917141589609!3d50.449764495295085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc24d030cf41%3A0xfbed7f422ec96831!2sCosmo%20Multimall!5e0!3m2!1sru!2sus!4v1660299888966!5m2!1sru!2sus"
-               width="400" height="420" style="border:0; border-radius: 30px; margin-top: 30px; margin-bottom: 30px;"
+               max-width="350" height="420" style="border:0; border-radius: 30px; margin-top: 30px; margin-bottom: 30px;"
                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <div class="modal-geo_buttons">
@@ -204,30 +204,32 @@
 
       </div>
       <div class="mobile-menu-modal-contact">
-         <div class="mobile-menu-modal_contacts">
-            <a href="mailto:info@anviovr.com">info@anviovr.com</a>
-            <a href="tel:+380672963030">+38 (067) 296-30-30</a>
-            <div class="contacts_social">
-               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                  <img src="./img/icons/mobile/telegram.png" alt="Telegram" />
-               </a>
-               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                  <img src="./img/icons/mobile/whatsapp.png" alt="Whatsapp" />
-               </a>
-               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                  <img src="./img/icons/mobile/fb.png" alt="Facebook" />
-               </a>
-               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                  <img src="./img/icons/mobile/tiktok.png" alt="TikTok" />
-               </a>
-               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                  <img src="./img/icons/mobile/youtube.png" alt="Youtube" />
-               </a>
+         <div class="mobile-menu-modal-contact_wrapper">
+            <div class="mobile-menu-modal_contacts">
+               <a href="mailto:info@anviovr.com">info@anviovr.com</a>
+               <a href="tel:+380672963030">+38 (067) 296-30-30</a>
+               <div class="contacts_social">
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/telegram.png" alt="Telegram" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/whatsapp.png" alt="Whatsapp" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/fb.png" alt="Facebook" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/tiktok.png" alt="TikTok" />
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <img src="./img/icons/mobile/youtube.png" alt="Youtube" />
+                  </a>
+               </div>
             </div>
          </div>
       </div>
       <div class="mobile-menu-modal-burger">
-         <div>
+         <div class="mobile-menu-modal-burger_wrapper">
             <div class="mobile-menu-modal-burger_header">
                <div class="details-city">
                   <ul>
@@ -251,46 +253,20 @@
                <div class="modal-burger-location">
                   <div class="country">
                      <h2>Страна</h2>
-                     <ul>
-                        <li>
-                           <a href="#">кыргызская республика</a>
-                        </li>
-                        <li>
-                           <a href="#">азербайджан</a>
-                        </li>
-                        <li class="active-gray">
-                           <a href="#">украина</a>
-                        </li>
-                        <li>
-                           <a href="#">сша</a>
-                        </li>
-                        <li>
-                           <a href="#">бельгия</a>
-                        </li>
-                        <li>
-                           <a href="#">саудовская аравия</a>
-                        </li>
-                        <li>
-                           <a href="#">франция</a>
-                        </li>
-                        <li>
-                           <a href="#">египет</a>
-                        </li>
-                     </ul>
+                           <button>Кыргызская республика</button>
+                           <button>Фзербайджан</button>
+                           <button disabled>Украина</button>
+                           <button>Сша</button>
+                           <button>Бельгия</button>
+                           <button>Саудовская аравия</button>
+                           <button>Франция</button>
+                           <button>Египет</button>
                   </div>
                   <div class="city">
                      <h2>Город</h2>
-                     <ul>
-                        <li class="active-gray">
-                           <a href="#">киев</a>
-                        </li>
-                        <li>
-                           <a href="#">днепр (скоро)</a>
-                        </li>
-                        <li>
-                           <a href="#">львов (скоро)</a>
-                        </li>
-                     </ul>
+                           <button disabled >Киев</button>
+                           <button >Днепр (скоро)</button>
+                           <button >Львов (скоро)</button>
                   </div>
                </div>
             </div>
@@ -400,7 +376,7 @@
    <main>
       <!-- // first section -->
       <section class="first-section first-section-back">
-         <img src="./img/first-section/red-circle.svg" alt="background" class="first-section-background">
+         <!-- <img src="./img/first-section/red-circle.svg" alt="background" class="first-section-background"> -->
          <div class="first-section_left">
             <div class="first-section_left_header">
                <p>Мы находимся в Cosmo Multimall</p>
@@ -448,10 +424,16 @@
             </div>
          </div>
          <div class="first-section_right">
-            <div>
-               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <div class="first-section_right-video">
                   <img src="./img/first-section/video-first-section.png" alt="video" />
-               </a>
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                     <div class="play">
+                        <div class="play-circle">
+                           <div class="play-triangle">
+                           </div>
+                        </div>
+                     </div>
+                  </a>
             </div>
          </div>
          <div class="first-section-circle">

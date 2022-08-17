@@ -10,7 +10,7 @@ header {
    align-items: center;
    background: #ffffffe6;
    backdrop-filter: blur(10px);
-   position: sticky;
+   position: fixed;
    top: 0;
    z-index: 10;
 }
@@ -18,6 +18,15 @@ header button{
    transition: all 0.3s ease;
 }
 header button:hover{
+   text-decoration: underline;
+}
+
+
+header button {
+   transition: all 0.3s ease;
+}
+
+header button:hover {
    text-decoration: underline;
 }
 
@@ -107,6 +116,7 @@ header ul,
    border-right: 1px solid #CE2127;
 }
 
+
 .header-contact_list-item{
    position: relative;
 }
@@ -145,6 +155,7 @@ header li:hover {
    transition: all 0.3s ease;
    cursor: pointer;
 }
+
 
 .header-btn:hover{
    background: #911115;
@@ -211,6 +222,10 @@ header li:hover {
    text-decoration: underline;
 }
 
+.dropdown-events a:hover {
+   text-decoration: underline;
+}
+
 /* //dropdown city */
 .dropdown-city {
    position: absolute;
@@ -246,15 +261,19 @@ header li:hover {
 }
 
 .country div,
-.city div {
+.city div,
+.country,
+.city {
    display: flex;
    flex-direction: column;
    align-items: start;
    gap: 26px;
 }
+
 .country button,
 .city button,
 .dropdown-lang button{
+
    border: none;
    background: none;
    text-transform: uppercase;
@@ -328,12 +347,11 @@ header li:hover {
 .mobile-menu-modal-geo,
 .mobile-menu-modal-contact,
 .mobile-menu-modal-burger {
-   transform: translate(100%);
    opacity: 0;
-   transition: all 0.3s ease;
+   visibility: hidden;
    width: 100%;
    height: 100vh;
-   position: absolute;
+   position: fixed;
    left: 0;
    top: 50px;
    z-index: 2;
@@ -344,20 +362,30 @@ header li:hover {
    justify-content: end;
    padding-right: 10px;
    padding-top: 10px;
-
 }
 
-.mobile-menu-modal-geo>div,
-.mobile-menu-modal-burger>div,
-.mobile-menu-modal-contact>div {
+
+.mobile-menu-modal-geo_wrapper,
+.mobile-menu-modal-burger_wrapper,
+.mobile-menu-modal-contact_wrapper {
+   transform: translateX(100%);
+   opacity: 0;
    padding: 30px 0;
    max-width: 350px;
    width: 100%;
    height: fit-content;
    background-color: #fff;
    border-radius: 20px;
+   transition: all 0.3s;
+
 }
 
+
+.show-modal {
+   visibility: visible;
+   opacity: 1;
+   transform: translate(0);
+}
 
 
 .modal-geo_info {
@@ -404,7 +432,7 @@ header li:hover {
    color: #fff;
    margin: 0;
    margin-bottom: 10px;
-   
+
 }
 
 
@@ -497,13 +525,15 @@ details[open] summary {
 }
 
 
-.datails-content,.datalis-content{
+.datails-content,
+.datalis-content {
    position: absolute;
    opacity: 0;
    visibility: hidden;
    transition: all 0.2s ease;
 }
-.show-content{
+
+.show-content {
    position: static;
    opacity: 1;
    visibility: visible;
@@ -613,10 +643,7 @@ details[open] summary {
    margin-right: 18px;
 }
 
-.show-modal {
-   transform: translate(0%);
-   opacity: 1;
-}
+
 
 
 .mobile-menu div {
