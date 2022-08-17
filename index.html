@@ -182,8 +182,9 @@
             </div>
             <iframe
                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.534836752118!2d30.43917141589609!3d50.449764495295085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc24d030cf41%3A0xfbed7f422ec96831!2sCosmo%20Multimall!5e0!3m2!1sru!2sus!4v1660299888966!5m2!1sru!2sus"
-               max-width="350" height="420" style="border:0; border-radius: 30px; margin-top: 30px; margin-bottom: 30px;"
-               allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               max-width="350" height="420"
+               style="border:0; border-radius: 30px; margin-top: 30px; margin-bottom: 30px;" allowfullscreen=""
+               loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <div class="modal-geo_buttons">
                <div class="active-gray">
@@ -253,20 +254,20 @@
                <div class="modal-burger-location">
                   <div class="country">
                      <h2>Страна</h2>
-                           <button>Кыргызская республика</button>
-                           <button>Фзербайджан</button>
-                           <button disabled>Украина</button>
-                           <button>Сша</button>
-                           <button>Бельгия</button>
-                           <button>Саудовская аравия</button>
-                           <button>Франция</button>
-                           <button>Египет</button>
+                     <button>Кыргызская республика</button>
+                     <button>Фзербайджан</button>
+                     <button disabled>Украина</button>
+                     <button>Сша</button>
+                     <button>Бельгия</button>
+                     <button>Саудовская аравия</button>
+                     <button>Франция</button>
+                     <button>Египет</button>
                   </div>
                   <div class="city">
                      <h2>Город</h2>
-                           <button disabled >Киев</button>
-                           <button >Днепр (скоро)</button>
-                           <button >Львов (скоро)</button>
+                     <button disabled>Киев</button>
+                     <button>Днепр (скоро)</button>
+                     <button>Львов (скоро)</button>
                   </div>
                </div>
             </div>
@@ -425,19 +426,25 @@
          </div>
          <div class="first-section_right">
             <div class="first-section_right-video">
-                  <img src="./img/first-section/video-first-section.png" alt="video" />
-                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                     <div class="play">
-                        <div class="play-circle">
-                           <div class="play-triangle">
-                           </div>
+               <img src="./img/first-section/video-first-section.png" alt="video" />
+               <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                  <div class="play">
+                     <div class="play-circle">
+                        <div class="play-triangle">
                         </div>
                      </div>
-                  </a>
+                  </div>
+               </a>
             </div>
          </div>
          <div class="first-section-circle">
-            <img src="./img/first-section/cosmo-logo.png" alt="Logo" class="cosmo-logo">
+            <div class="cosmo-logo-wrapper">
+               <img src="./img/first-section/mask-group.png" alt="Logo" class="cosmo-logo">
+               <div class="cosmo-logo-cirle">
+                  <div class="cosmo-logo-title">Cosmo</div>
+                  <div class="cosmo-logo-name">Multimall</div>
+               </div>
+            </div>
             <h2>В центре Киева</h2>
             <div class="first-section-circle-info">
                <img src="./img/icons/metro.png" alt="Icon metro">
@@ -535,9 +542,9 @@
             </div>
             <div class="fourth-section-header-buttons" id="arena">
                <button class="btn-fourth-section btn-fourth-section-active">арены</button>
-               <button class="btn-fourth-section">атракционы</button>
-               <button class="btn-fourth-section">стенды</button>
-               <button class="btn-fourth-section">кубы</button>
+               <button class="btn-fourth-section hidden">атракционы</button>
+               <button class="btn-fourth-section hidden">стенды</button>
+               <button class="btn-fourth-section hidden">кубы</button>
             </div>
          </div>
          <div class="fourth-section_content">
@@ -840,7 +847,11 @@
 
                <button class=" btn btn-close">X</button>
             </div>
-
+         </div>
+         <div class="fourth-section_footer">
+            <button class="btn-fourth-section ">атракционы</button>
+            <button class="btn-fourth-section ">стенды</button>
+            <button class="btn-fourth-section ">кубы</button>
          </div>
       </section>
    </main>

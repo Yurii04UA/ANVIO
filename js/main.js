@@ -54,18 +54,12 @@ menuButtons.forEach((elem) => {
 
     arrayModals[elem.id].classList.toggle(`show-modal`);
 
-    if (arrayModals[elem.id].classList.value.includes(`show-modal`)) {
-      body.classList.add("oh");
-    } else {
-      body.classList.remove("oh");
 
     if(arrayModals[elem.id].classList.value.includes('show-modal')){
       arrayMenu[elem.id].classList.add(`show-modal`)
     }else{
       arrayMenu[elem.id].classList.remove(`show-modal`)
-
     }
-    
     
   });
 });

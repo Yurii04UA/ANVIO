@@ -211,6 +211,26 @@ main {
    width: 201px;
 }
 
+.cosmo-logo-wrapper{
+   position: relative;
+}
+.cosmo-logo-cirle{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   color: #fff;
+   text-transform: uppercase;
+   text-align: center;
+}
+.cosmo-logo-title{
+   font-size: 30px;
+   font-weight: 600;
+}
+.cosmo-logo-name{
+   font-size: 24px;
+   font-weight: 600;
+}
 .circle-geo {
    width: 53px;
 }
@@ -274,12 +294,16 @@ main {
    .first-section_left-info {
       gap: 25px;
    }
+   .play{
+      transform: translate(-50%,-50%) scale(0.8);
+   }
 }
 
 @media (max-width: 1250px) {
    .first-section {
       align-items: flex-start;
    }
+  
 }
 
 @media (max-width: 1150px) {
@@ -383,6 +407,9 @@ main {
    .slider-info {
       height: auto;
    }
+   .play{
+      transform: translate(-50%,-50%) scale(0.6);
+   }
 }
 @media (max-width: 570px){
    .first-section_right {
@@ -444,6 +471,9 @@ main {
    }
    .first-section_right {
       bottom: -300px;
+  }
+  .slider-info{
+   width: 250px;
   }
 }
 @media (max-width: 380px) {
