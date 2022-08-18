@@ -4,6 +4,7 @@ main {
    margin: 0 auto;
    padding: 0 30px;
    position: relative;
+   top: -80px;
    background: url('../../img/first-section/red-circle.svg') left top no-repeat; 
 }
 
@@ -60,7 +61,6 @@ main {
 .first-section_left-wrapper {
    display: flex;
    align-items: center;
-   justify-content: center;
    gap: 10px;
    padding-top: 70px;
 }

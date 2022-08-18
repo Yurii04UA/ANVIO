@@ -69,3 +69,7 @@ button {
 .btn-red:hover {
   background: #911115;
 }
+
+::-webkit-scrollbar {
+  width: 0;
+}

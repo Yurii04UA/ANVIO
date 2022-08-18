@@ -10,14 +10,16 @@ header {
    align-items: center;
    background: #ffffffe6;
    backdrop-filter: blur(10px);
-   position: fixed;
+   position: sticky;
    top: 0;
    z-index: 10;
 }
-header button{
+
+header button {
    transition: all 0.3s ease;
 }
-header button:hover{
+
+header button:hover {
    text-decoration: underline;
 }
 
@@ -75,6 +77,7 @@ header ul,
 .header-nav_list-item:hover .dropdown-fun {
    opacity: 1;
    visibility: visible;
+   display: flex;
    top: 63px;
 }
 
@@ -82,18 +85,21 @@ header ul,
    opacity: 1;
    visibility: visible;
    top: 63px;
+   display: flex;
 }
 
 .header-contact_list-item:hover .dropdown-city {
    opacity: 1;
    visibility: visible;
    top: 63px;
+   display: flex;
 }
 
 .header-contact_list-item:hover .dropdown-lang {
    opacity: 1;
    visibility: visible;
    top: 63px;
+   display: flex;
 }
 
 /* /right */
@@ -112,7 +118,7 @@ header ul,
    border-right: 1px solid #CE2127;
 }
 
-.header-contact_list-item{
+.header-contact_list-item {
    position: relative;
 }
 
@@ -149,7 +155,7 @@ header li:hover {
    cursor: pointer;
 }
 
-.header-btn:hover{
+.header-btn:hover {
    background: #911115;
    text-decoration: none;
 }
@@ -170,10 +176,12 @@ header li:hover {
    visibility: hidden;
    transition: all 0.4s ease;
 
+
    display: flex;
    flex-wrap: wrap;
    padding: 30px;
    gap: 5px;
+   display: none;
 }
 
 .dropdown-fun div {
@@ -202,6 +210,7 @@ header li:hover {
    flex-direction: column;
    align-items: flex-start;
    gap: 20px;
+   display: none;
 }
 
 .dropdown-events a {
@@ -209,7 +218,8 @@ header li:hover {
    align-items: center;
    gap: 20px;
 }
-.dropdown-events a:hover{
+
+.dropdown-events a:hover {
    text-decoration: underline;
 }
 
@@ -234,6 +244,7 @@ header li:hover {
 
    display: flex;
    padding: 30px;
+   display: none;
 }
 
 .active-gray {
@@ -262,7 +273,7 @@ header li:hover {
 
 .country button,
 .city button,
-.dropdown-lang button{
+.dropdown-lang button {
    border: none;
    background: none;
    text-transform: uppercase;
@@ -285,12 +296,13 @@ header li:hover {
    border-radius: 30px 0px 30px 30px;
 
    filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
+
+   transition: all 0.4s ease;
    opacity: 0;
    visibility: hidden;
-   transition: all 0.4s ease;
-
    display: flex;
    padding: 30px;
+   display: none;
 }
 
 .dropdown-lang div {
@@ -338,19 +350,16 @@ header li:hover {
    opacity: 0;
    visibility: hidden;
    width: 100%;
-   height: 100vh;
+   height: calc(100vh - 50px);
    position: fixed;
    left: 0;
    top: 50px;
    z-index: 2;
    background-color: rgba(0, 0, 0, 0.5);
-   overflow: auto;
-   padding-left: 10px;
-
+   overflow: hidden;
    display: flex;
    justify-content: end;
-   padding-right: 10px;
-   padding-top: 10px;
+   padding: 10px;
 }
 
 
@@ -362,12 +371,18 @@ header li:hover {
    padding: 30px 0;
    max-width: 350px;
    width: 100%;
-   height: fit-content;
+
+   overflow: auto;
    background-color: #fff;
    border-radius: 20px;
    transition: all 0.3s;
-
 }
+
+.mobile-menu-modal-contact_wrapper{
+      height: fit-content;
+}
+
+
 
 .show-modal {
    visibility: visible;
@@ -401,7 +416,6 @@ header li:hover {
    flex-direction: column;
    align-items: center;
    gap: 10px;
-   margin-bottom: 30px;
 }
 
 .modal_btn {
@@ -607,7 +621,6 @@ details[open] summary {
    gap: 10px;
    justify-content: center;
    margin-top: 20px;
-   margin-bottom: 30px;
 
 }
 
