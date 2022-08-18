@@ -21,7 +21,6 @@ header button:hover{
    text-decoration: underline;
 }
 
-
 header button {
    transition: all 0.3s ease;
 }
@@ -29,7 +28,6 @@ header button {
 header button:hover {
    text-decoration: underline;
 }
-
 
 header ul,
 .header-contact {
@@ -51,7 +49,6 @@ header ul,
    padding: 30px 0;
 }
 
-
 .header-nav_list-item_link::after {
    content: '';
    width: 10px;
@@ -63,7 +60,6 @@ header ul,
    transform: rotate(135deg);
    transition: all 0.3s ease;
 }
-
 
 /* / hoover li */
 .header-nav_list-item:hover .header-nav_list-item_link::after {
@@ -116,7 +112,6 @@ header ul,
    border-right: 1px solid #CE2127;
 }
 
-
 .header-contact_list-item{
    position: relative;
 }
@@ -124,8 +119,6 @@ header ul,
 .header-contact_list-item:hover .header-nav_list-item_link {
    color: #CE2127;
 }
-
-
 
 header li:hover {
    color: #CE2127;
@@ -156,9 +149,9 @@ header li:hover {
    cursor: pointer;
 }
 
-
 .header-btn:hover{
    background: #911115;
+   text-decoration: none;
 }
 
 /* // dropdown  */
@@ -188,7 +181,6 @@ header li:hover {
    height: 100px;
 }
 
-
 /* //dropdown events */
 .dropdown-events {
    position: absolute;
@@ -211,7 +203,6 @@ header li:hover {
    align-items: flex-start;
    gap: 20px;
 }
-
 
 .dropdown-events a {
    display: flex;
@@ -243,7 +234,6 @@ header li:hover {
 
    display: flex;
    padding: 30px;
-
 }
 
 .active-gray {
@@ -273,7 +263,6 @@ header li:hover {
 .country button,
 .city button,
 .dropdown-lang button{
-
    border: none;
    background: none;
    text-transform: uppercase;
@@ -342,7 +331,6 @@ header li:hover {
    background-color: rgba(128, 128, 128, 0.2);
 }
 
-
 /* /// modal menu */
 .mobile-menu-modal-geo,
 .mobile-menu-modal-contact,
@@ -381,13 +369,11 @@ header li:hover {
 
 }
 
-
 .show-modal {
    visibility: visible;
    opacity: 1;
    transform: translate(0);
 }
-
 
 .modal-geo_info {
    padding: 0 30px;
@@ -434,9 +420,7 @@ header li:hover {
    color: #fff;
    margin: 0;
    margin-bottom: 10px;
-
 }
-
 
 .mobile-menu-modal-geo div {
    text-align: center;
@@ -491,10 +475,6 @@ header li:hover {
    margin-top: 20px;
 }
 
-
-details summary::-webkit-details-marker {
-   display: none
-}
 
 details summary {
    list-style: none;
@@ -644,9 +624,6 @@ details[open] summary {
 .contacts_social a:not(:last-child) {
    margin-right: 18px;
 }
-
-
-
 
 .mobile-menu div {
    width: 50px;
