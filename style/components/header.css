@@ -87,13 +87,13 @@ header ul,
 .header-contact_list-item:hover .dropdown-city {
    opacity: 1;
    visibility: visible;
-   top: 35px;
+   top: 63px;
 }
 
 .header-contact_list-item:hover .dropdown-lang {
    opacity: 1;
    visibility: visible;
-   top: 35px;
+   top: 63px;
 }
 
 /* /right */
