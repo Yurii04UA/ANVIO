@@ -126,7 +126,7 @@ header ul,
    color: #CE2127;
 }
 
-header li:hover {
+.header-link:hover {
    color: #CE2127;
 }
 
@@ -273,7 +273,8 @@ header li:hover {
 
 .country button,
 .city button,
-.dropdown-lang button {
+.dropdown-lang button,
+.burger_language-wrapper button {
    border: none;
    background: none;
    text-transform: uppercase;
@@ -289,7 +290,6 @@ header li:hover {
 .dropdown-lang {
    position: absolute;
    color: #000;
-   width: 147px;
    right: 30px;
    top: 0px;
    background: #fff;
@@ -447,7 +447,7 @@ header li:hover {
 }
 
 .mobile-menu-modal-burger>div {
-   padding: 30px;
+   padding: 30px 15px;
 }
 
 .modal-burger-location .city,
@@ -526,7 +526,6 @@ details[open] summary {
    position: absolute;
    opacity: 0;
    visibility: hidden;
-   transition: all 0.2s ease;
 }
 
 .show-content {
@@ -566,23 +565,24 @@ details[open] summary {
    margin-bottom: 20px;
 }
 
-.details-party ul {
+.details-party div {
+   display: flex;
    flex-direction: column;
-}
-
-.details-party ul li {
-   display: flex;
+   gap: 20px;
    width: 250px;
-
+   margin: 0 auto;
+   margin-top: 20px;
 }
 
-.details-party ul a {
+
+.details-party a {
    display: flex;
+   width: 250;
    align-items: center;
    gap: 20px;
 }
 
-.details-party ul a p {
+.details-party a p {
    max-width: 200px;
    text-align: start;
 }

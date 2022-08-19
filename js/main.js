@@ -9,22 +9,28 @@ const arrayMenu = [
   document.querySelector(".mobile-menu-modal-burger_wrapper"),
 ];
 const menuButtons = document.querySelectorAll(".menu-button");
-
+const body = document.body
 const showContentLocation = document.querySelector(".datails-content-location");
 const showContentLanguage = document.querySelector(".datails-content-language");
 const showContryOrLang = document.querySelectorAll(".datails-content");
 const btnCity = document.querySelector(".details-city");
 const btnLang = document.querySelector(".details-language");
+const allLinks = document.querySelectorAll('.details-links')
+
 
 //modal fourth section
 const btnPrice = document.querySelector(".btn-price");
 const btnClose = document.querySelector(".btn-close");
-const modalWindowPrice = document.querySelector(".fourth-section_modal");
+const modalWindowPrice = document.querySelector('.fourth-section_modal-wrapper')
+const modalWindowPriceBlur = document.querySelector(".fourth-section_modal");
 btnPrice.addEventListener("click", () => {
+  modalWindowPriceBlur.classList.add("fourth-sectio-show-modal");
   modalWindowPrice.classList.add("fourth-sectio-show-modal");
 });
 btnClose.addEventListener("click", () => {
+  modalWindowPriceBlur.classList.remove("fourth-sectio-show-modal");
   modalWindowPrice.classList.remove("fourth-sectio-show-modal");
+
 });
 
 // active circle of mobile menu
@@ -60,6 +66,12 @@ menuButtons.forEach((elem) => {
       arrayMenu[elem.id].classList.add(`show-modal`);
     } else {
       arrayMenu[elem.id].classList.remove(`show-modal`);
+    }
+
+    if (arrayModals[elem.id].classList.value.includes(`show-modal`)) {
+      body.classList.add("oh");
+    } else {
+      body.classList.remove("oh");
     }
   });
 });
@@ -107,3 +119,32 @@ $(".slider").slick({
   dots: true,
   initialSlide: 1,
 });
+
+const closeAll = () => {
+  arrayModals.forEach((modal) => {
+    modal.classList.remove(`show-modal`);
+  });
+  arrayMenu.forEach((modal) => {
+    modal.classList.remove(`show-modal`);
+  });
+  menuButtons.forEach((button) => {
+    button.classList.remove("mobile-menu-active");
+  });
+  body.classList.remove("oh");
+  showContryOrLang.forEach((e) => e.classList.remove("show-content"));
+  closeAllDetails();
+
+}
+
+document.addEventListener('click', (elem) => {
+  if (elem.target.classList.value.includes('show-modal')) {
+    closeAll()
+  }
+})
+
+
+allLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeAll()
+  })
+})
