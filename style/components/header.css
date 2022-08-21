@@ -371,15 +371,15 @@ header ul,
    padding: 30px 0;
    max-width: 350px;
    width: 100%;
-
+   
    overflow: auto;
    background-color: #fff;
    border-radius: 20px;
-   transition: all 0.3s;
+   transition: all 0.5s;
 }
 
-.mobile-menu-modal-contact_wrapper{
-      height: fit-content;
+.mobile-menu-modal-contact_wrapper {
+   height: fit-content;
 }
 
 
@@ -447,7 +447,7 @@ header ul,
 }
 
 .mobile-menu-modal-burger>div {
-   padding: 30px 15px;
+   padding: 30px 30px;
 }
 
 .modal-burger-location .city,

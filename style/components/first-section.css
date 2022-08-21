@@ -148,6 +148,7 @@ main {
 .first-section_left-slider {
    margin-top: 70px;
    width: 500px;
+   margin: 0 20px;
 }
 
 .slider-info {
@@ -449,10 +450,13 @@ main {
       gap: 0;
    }
    .first-section_left-slider {
-      width: 300px;
+      width: 290px;
    }
    .first-section_right {
       bottom: -300px;
+   }
+   .slider-info{
+      padding: 15px 30px;
    }
 }
 

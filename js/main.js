@@ -9,25 +9,26 @@ const arrayMenu = [
   document.querySelector(".mobile-menu-modal-burger_wrapper"),
 ];
 const menuButtons = document.querySelectorAll(".menu-button");
-const body = document.body
+const body = document.body;
 const showContentLocation = document.querySelector(".datails-content-location");
 const showContentLanguage = document.querySelector(".datails-content-language");
 const showContryOrLang = document.querySelectorAll(".datails-content");
 const btnCity = document.querySelector(".details-city");
 const btnLang = document.querySelector(".details-language");
-const allLinks = document.querySelectorAll('.details-links')
-
+const allLinks = document.querySelectorAll(".details-links");
 
 //modal fourth section
 const btnPrice = document.querySelector(".btn-price");
 const btnClose = document.querySelector(".btn-close");
-const modalWindowPrice = document.querySelector('.fourth-section_modal-wrapper')
+const modalWindowPrice = document.querySelector(
+  ".fourth-section_modal-wrapper"
+);
 const modalWindowPriceBlur = document.querySelector(".fourth-section_modal");
 btnPrice.addEventListener("click", () => {
   modalWindowPriceBlur.classList.add("fourth-sectio-show-modal");
   modalWindowPrice.classList.add("fourth-sectio-show-modal");
 });
-btnClose.addEventListener("click", () => {
+btnClose.addEventListener("click", (e) => {
   modalWindowPriceBlur.classList.remove("fourth-sectio-show-modal");
   modalWindowPrice.classList.remove("fourth-sectio-show-modal");
 
@@ -113,13 +114,6 @@ document.querySelectorAll("details").forEach((el) => {
   el.addEventListener("toggle", onToggle);
 });
 
-/// slider
-
-$(".slider").slick({
-  dots: true,
-  initialSlide: 1,
-});
-
 const closeAll = () => {
   arrayModals.forEach((modal) => {
     modal.classList.remove(`show-modal`);
@@ -133,18 +127,26 @@ const closeAll = () => {
   body.classList.remove("oh");
   showContryOrLang.forEach((e) => e.classList.remove("show-content"));
   closeAllDetails();
+};
 
-}
-
-document.addEventListener('click', (elem) => {
-  if (elem.target.classList.value.includes('show-modal')) {
-    closeAll()
+document.addEventListener("click", (elem) => {
+  if (elem.target.classList.value.includes("show-modal")) {
+    closeAll();
   }
-})
+  if (elem.target.classList.value.includes("fourth-sectio-show-modal")) {
+    modalWindowPriceBlur.classList.remove("fourth-sectio-show-modal");
+    modalWindowPrice.classList.remove("fourth-sectio-show-modal");
+  }
+});
 
+allLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    closeAll();
+  });
+});
 
-allLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    closeAll()
-  })
-})
+/// slider
+$(".slider").slick({
+  dots: true,
+  initialSlide: 1,
+});

@@ -315,16 +315,15 @@
 /* // modal */
 .fourth-section_modal {
    opacity: 0;
-   transition: all 0.1s ease;
+   visibility: hidden;
    width: 100%;
-   height: 102vh;
-   position: absolute;
+   height: 100vh;
+   position: fixed;
    left: 0;
    top: 0;
    z-index: 10;
    overflow: hidden;
    background-color: rgba(0, 0, 0, 0.5);
-   
    padding: 20px;
 }
 
@@ -336,22 +335,32 @@
    margin: 0 auto;
    background: #EEE;
    max-width: 1320px;
-   position: relative;
+   width: 100%;
    border-radius: 20px;
    padding: 50px;
    display: flex;
    justify-content: space-between;
    gap: 10px;
    overflow: auto;
-   height: 90%;
+   transition: all 0.5s ease;
+}
+
+.wrapper-btn {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: -20px;
+   right: 0;
+   padding-left: 5px;
 }
 
 
 .fourth-sectio-show-modal {
-   transform: translate(0%);
+   transform: translate(0);
+   visibility: visible;
    opacity: 1;
-   position: fixed;
-   transition: all 0.5s ease;
+
+
 }
 
 .fourth-section_modal-wrapper-left {
@@ -463,7 +472,8 @@
    border-radius: 20px;
    background-color: #fff;
 }
-.fourth-section_modal-wrapper-right_item:not(:last-child){
+
+.fourth-section_modal-wrapper-right_item:not(:last-child) {
    margin-bottom: 20px;
 }
 
@@ -496,9 +506,26 @@
    color: #c55054;
 }
 
-.section_modal-wrapper-left-time-price{
+.section_modal-wrapper-left-time-price {
    flex-direction: column;
 }
+
+.btn-close {
+   background-color: #e1d6d6;
+   position: sticky;
+   right: 20%;
+   top: -45px;
+   font-weight: 100;
+   padding: 0;
+   border: none;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   z-index: 100;
+   opacity: 0.7;
+ }
+
+
 
 @media (max-width: 1600px) {
    .fourth-section_content-main-item_wrapper {
@@ -537,8 +564,9 @@
 }
 
 @media (max-width: 1350px) {
-   .fourth-section_modal-wrapper {
 
+   .fourth-section_modal-wrapper {
+      height: 90vh;
       flex-direction: column;
       align-items: center;
       width: fit-content;
@@ -628,7 +656,11 @@
    }
 }
 
+
 @media (max-width: 710px) {
+   .btn-close {
+      top: -15px;
+   }
    .fourth-section_modal-wrapper-left-header-title {
       font-size: 32px;
    }
@@ -665,6 +697,9 @@
       padding: 20px;
    }
 
+   .btn-close {
+      top: -15px;
+   }
 }
 
 
@@ -705,9 +740,6 @@
       left: -50px;
    }
 
-   .fourth-section_modal {
-      padding: 60px 10px 20px 55px;
-   }
 
    .fourth-section_modal-wrapper-right_item-title {
       flex-direction: column;
@@ -718,7 +750,8 @@
       font-size: 50px;
       text-align: center;
    }
-   .text-3{
+
+   .text-3 {
       bottom: 23%;
    }
 
@@ -747,6 +780,9 @@
    .text-4 {
       bottom: 40%;
       right: 5%;
+   }
+   .wrapper-btn{
+      height: 105%;
    }
 }
 
