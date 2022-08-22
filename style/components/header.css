@@ -356,10 +356,11 @@ header ul,
    top: 50px;
    z-index: 2;
    background-color: rgba(0, 0, 0, 0.5);
-   overflow: hidden;
    display: flex;
    justify-content: end;
    padding: 10px;
+   align-items: baseline;
+   overflow: auto;
 }
 
 

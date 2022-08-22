@@ -146,9 +146,8 @@ main {
 
 /* // slider */
 .first-section_left-slider {
-   margin-top: 70px;
    width: 500px;
-   margin: 0 20px;
+   margin: 70px 20px;
 }
 
 .slider-info {
@@ -331,7 +330,7 @@ main {
 
 @media (max-width: 1000px) {
    .first-section {
-      padding: 70px 20px 0px 20px;
+      padding: 150px 20px 0px 20px;
    }
 
    .first-section_left h1 {
